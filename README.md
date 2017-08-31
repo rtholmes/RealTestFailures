@@ -1,6 +1,6 @@
-##Replication Package for the paper "Measuring the cost of regression testing in practice: A study of Java projects using continuous integration."
+## Replication Package for the paper "Measuring the cost of regression testing in practice: A study of Java projects using continuous integration."
 
-The paper has been accepted at [FSE 2017](http://esec-fse17.uni-paderborn.de/). 
+The paper has been accepted at [FSE 2017](http://esec-fse17.uni-paderborn.de/):
 
 * [DOI](https://doi.org/10.1145/3106237.3106288)
 * [PDF](https://www.cs.ubc.ca/~rtholmes/papers/fse_2017_labuschange.pdf)
@@ -26,7 +26,7 @@ Travis build logs and the Git repositories themselves are not provided because o
 The data is provided as a [MySQL dump](db.sql.zip) and contains the following tables:
 
 
-###repositories
+### `repositories`
 
 | Field                   | Type         | Description |
 |-------------------------|--------------|--------------|
@@ -40,7 +40,7 @@ The data is provided as a [MySQL dump](db.sql.zip) and contains the following ta
 | created_at              | date         | Date created on Github|
 
 
-###builds
+### `builds`
 
 | Field                | Type         | Description |
 |----------------------|--------------|-------------|
@@ -60,7 +60,7 @@ The data is provided as a [MySQL dump](db.sql.zip) and contains the following ta
 | fix_type             | varchar(255) | Type of changed that fixed the build (if it is apart of a tuple, see paper for details)|
 
 
-###commits
+### `commits`
 
 | Field           | Type         | Description |
 |-----------------|--------------|-------------|
@@ -77,7 +77,7 @@ The data is provided as a [MySQL dump](db.sql.zip) and contains the following ta
 | in_repo         | tinyint(1)   | Whether the commit is in the repository or not|
 
 
-###tests
+### `tests`
 
 Contains tests that failed in the studied tuples of 40 projects.
 
